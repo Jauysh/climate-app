@@ -40,7 +40,7 @@ page = st.sidebar.radio("Go to", ["Overview", "Temperature Trends", "CO2 Levels"
 
 # Generate sample climate data
 def generate_sample_data():
-    dates = pd.date_range(start='2000-01-01', end='2024-12-31', freq='M')
+    dates = pd.date_range(start='2000-01-01', end='2024-12-31', freq='ME')
     
     # Temperature data (simulated global warming trend)
     base_temp = 14.0
